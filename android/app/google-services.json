@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582809644656",
+    "project_id": "pothos2-6d77e",
+    "storage_bucket": "pothos2-6d77e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582809644656:android:9b4c3a4d2c5d51164d0eb5",
+        "android_client_info": {
+          "package_name": "com.pothosmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582809644656-e6pot9amraonlps7ncpuqalemj8mqp39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXUl19e7kay08AvNjUvW8Tir6uVKY3EJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582809644656-e6pot9amraonlps7ncpuqalemj8mqp39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
