@@ -2,10 +2,12 @@ import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import tw from 'tailwind-react-native-classnames';
 
 import Transactions from './src/screens/Transactions';
 import Dashboard from './src/screens/Dashboard';
 import Options from './src/screens/Options';
+import { green300 } from 'react-native-paper/lib/typescript/styles/colors';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -15,7 +17,7 @@ const App = () => {
       <NavigationContainer>
         <Tab.Navigator
           barStyle={{
-            backgroundColor: "darkgreen",
+            backgroundColor: `${tw.color("green-700")}`,
           }}>
           <Tab.Screen name="Transactions" component={Transactions} />
           <Tab.Screen name="Dashboard" component={Dashboard} />
