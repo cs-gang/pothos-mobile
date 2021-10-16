@@ -5,7 +5,7 @@ import tw from 'tailwind-react-native-classnames';
 
 export default function Transactions() {
     return (
-        <SafeAreaView>
+        <SafeAreaView style={tw.style("bg-green-600", { height: "100%", width: "100%" })}>
             <View>
                 <Text style={tw.style("text-black")}>Transaction</Text>
             </View>
