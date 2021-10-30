@@ -4,8 +4,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import tw from 'tailwind-react-native-classnames';
 import Carousel from 'react-native-snap-carousel'
 
-import GoogleAuthButton from '../components/GoogleAuthButton';
-
 export default function Transactions() {
     const Item = ({ item, index }) => {
         return (
@@ -38,7 +36,6 @@ export default function Transactions() {
                     loop={true}
                     enableMomentum={true} />
             </View>
-            <GoogleAuthButton />
         </SafeAreaView>
     )
 }
