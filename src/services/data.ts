@@ -24,13 +24,13 @@ export async function getUserData(uid: string): Promise<UserData | undefined> {
   const data = userDoc.data();
   if (data) {
     return {
-      username: data.get('username'),
+      username: data.username,
       transactions: firestore()
         .collection('users')
         .doc(uid)
         .collection('transactions'),
-      currency: data.get('currency'),
-      tags: data.get('tags'),
+      currency: data.currency,
+      tags: data.tags,
     };
   }
 }
