@@ -43,14 +43,14 @@ export async function createNewTransaction(
   // arrayUnion will avoid repetition
   let docRef = firestore().collection('users').doc(uid);
   docRef.update({
-    tags: FirebaseFirestoreTypes.FieldValue.arrayUnion(...transaction.tags),
+    tags: firestore.FieldValue.arrayUnion(...transaction.tags),
   });
   let transactionColRef = docRef.collection('transactions');
   await transactionColRef.add({
     name: transaction.name,
     notes: transaction.notes,
     amount: transaction.amount,
-    transactionOn: FirebaseFirestoreTypes.Timestamp.now(),
+    transactionOn: firestore.Timestamp.now(),
     transactionType: transaction.transactionType,
     tags: transaction.tags,
   });
